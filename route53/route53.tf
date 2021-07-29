@@ -3,4 +3,4 @@ resource "aws_route53_record" "blog" {
   name    = "blog.tatik2021.com"
   type    = "A"
   ttl     = "60"
-  records = [127.0.0.1]
+  records = ["127.0.0.1"]

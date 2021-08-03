@@ -52,3 +52,4 @@ resource "aws_security_group" external_by_terraform" {
 
 }
   
+}

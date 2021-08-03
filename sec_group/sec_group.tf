@@ -9,7 +9,6 @@ resource "aws_security_group" external_by_terraform" {
     protocol         = "tcp"
     cidr_blocks      = [0.0.0.0/0]
 
- }
 
      ingress {
     description      = "TLS from VPC"
@@ -17,8 +16,7 @@ resource "aws_security_group" external_by_terraform" {
     to_port          = 80
     protocol         = "tcp"
     cidr_blocks      = [0.0.0.0/0]
-     
-     }
+ 
     
   ingress {
     description      = "TLS from VPC"
@@ -27,7 +25,6 @@ resource "aws_security_group" external_by_terraform" {
     protocol         = "tcp"
     cidr_blocks      = [50.194.68.231/32]
 
-  }
 
       ingress {
     description      = "TLS from VPC"
@@ -43,13 +40,10 @@ resource "aws_security_group" external_by_terraform" {
     to_port          = 0
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
-    
-
-}
+  }
 
   tags = {
     Name = "external_by_terraform"
-
 }
   
 }

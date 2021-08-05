@@ -19,7 +19,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "web" {
   ami           = "ami-ae6272b8"
   instance_type = "t2.micro"
-  user_data = file("user_data.sh")
+  user_data = file("userdata.sh")
 
   tags = {
     Name = "HelloWorld"

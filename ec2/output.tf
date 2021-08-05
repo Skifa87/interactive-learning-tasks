@@ -14,6 +14,6 @@ output "public_ip" {
 }
 
 output "region" {
-    value = aws_instance.web.region
+    value = aws_instance.web.aws_region
 
 }
